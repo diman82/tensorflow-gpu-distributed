@@ -85,7 +85,7 @@ def get_compiled_model_svhn():
 
 def get_dataset_from_npz():
     # Return the MNIST dataset in the form of a `tf.data.Dataset`.
-    full_mnist_path = os.path.join(os.getcwd(), 'mnist.npz')
+    full_mnist_path = os.path.join(os.getcwd(), './data/mnist.npz')
     (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data(path=full_mnist_path)
 
     # Preprocess the data (these are Numpy arrays)
@@ -153,7 +153,7 @@ def load_dataset(global_batch_size):
     # (x_train, y_train), (x_test, y_test) = get_dataset_fashion_mnist()
     train_mat, test_mat = 'train_32x32.mat', 'test_32x32.mat'
     # (x_train, y_train), (x_test, y_test) = get_dataset_from_mat(train_mat, test_mat)
-    (X_train, y_train), (x_test, y_test) = get_dataset_from_h5('SVHN_single_grey1.h5')
+    (X_train, y_train), (x_test, y_test) = get_dataset_from_h5('./data/SVHN_single_grey1.h5')
 
     # num_val_samples = round(17.7 * x_train.size / 100.0)  # https://stackoverflow.com/a/13612921/336558
     #

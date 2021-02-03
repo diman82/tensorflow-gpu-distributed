@@ -56,3 +56,9 @@ Generated\ Files/
 ckpt*
 ckpt*/
 ckpt*/*
+*.h5
+*.dmatrix
+*.csv.gz
+*.npz
+data/
+*.tfcache.*
