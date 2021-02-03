@@ -1,0 +1,58 @@
+#VSCode
+.vscode/
+
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+/.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+
+# Python
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.cache
+.pytest_cache/
+out/
+_build/
+target/
+
+# Distribution / packaging
+.Python
+env/
+venv/
+.env/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+
+# Visual Studio 2017 auto generated files
+Generated\ Files/
+
+# Generated checkpoints folders
+ckpt*
+ckpt*/
+ckpt*/*
