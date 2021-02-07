@@ -151,7 +151,7 @@ def load_dataset(global_batch_size):
     # get custom dataset
     # (x_train, y_train), (x_test, y_test) = get_dataset_from_npz()
     # (x_train, y_train), (x_test, y_test) = get_dataset_fashion_mnist()
-    train_mat, test_mat = 'train_32x32.mat', 'test_32x32.mat'
+    train_mat, test_mat = os.path.join('data', 'train_32x32.mat'), os.path.join('data', 'test_32x32.mat')
     # (x_train, y_train), (x_test, y_test) = get_dataset_from_mat(train_mat, test_mat)
     (X_train, y_train), (x_test, y_test) = get_dataset_from_h5('./data/SVHN_single_grey1.h5')
 
