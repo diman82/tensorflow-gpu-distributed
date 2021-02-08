@@ -1,8 +1,10 @@
 import argparse
+import logging
 import os
 from utils.ray_test import compute_reciprocals
 from execution_time import ExecutionTime
 import ray
+import ray.util
 import numpy as np
 np.random.seed(0)
 import time
@@ -59,7 +61,8 @@ if __name__ == '__main__':
     if args.ray:
         if ray.is_initialized() == False:
             # ray.init(local_mode=True)  # for debug purposes
-            ray.init(address='192.168.1.11:6379', _redis_password='5241590000000000')  # docker
+            ray.init(address='192.168.1.11:6379', _redis_password='5241590000000000', logging_level=logging.DEBUG)
+            # ray.util.connect("192.168.1.11:10001")  # replace with the appropriate host and port
         # call main function as ray.remote
         # future = main.remote()
         # print("This runs locally")
